@@ -52,10 +52,12 @@
     
     <!------------------SEARCH-------------------->
     <!--Ovdje treba biti input i search dugme. Kada se klikne ispod ce se prikazati poruka-->
+   <div class="container text-center">
     <input type="text" id="input" placeholder="Unesite naziv filma">
-<button onclick="searchMovie()">Pretraga</button>
+<button onclick="searchMovie()"class="btn btn-primary">Pretraga</button>
+
 <p id="result"></p>
-    
+</div>
     <!------------------CAROUSEL-------------------->
 
     <div id="carouselExample" class="carousel slide">
@@ -86,19 +88,19 @@
         <div class="row">
           <!-- Prva kolona -->
           <div class="col-md-4 p-2">
-            <img src="assets/1.jpg" class="img-fluid" alt="Slika 1">
+            <img id="1" src="" class="img-fluid" alt="Slika 1">
             <button class="btn btn-primary mt-2">Wish list</button>
           </div>
       
           <!-- Druga kolona -->
           <div class="col-md-4 p-2">
-            <img src="assets/2.jpg" class="img-fluid" alt="Slika 2">
+            <img  id="2"src="" class="img-fluid" alt="Slika 2">
             <button class="btn btn-primary mt-2">Wish list</button>
           </div>
       
           <!-- Treća kolona -->
           <div class="col-md-4 p-2">
-            <img src="assets/3.jpg" class="img-fluid" alt="Slika 3">
+            <img id="3" src="" class="img-fluid" alt="Slika 3">
             <button class="btn btn-primary mt-2">Wish list</button>
           </div>
         </div>
