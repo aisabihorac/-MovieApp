@@ -73,3 +73,6 @@ for (let i=0; i<3; i++){
  let element =document.createElement('p');
 Element.innerText = "Hello, World!";
 document.body.appendChild(noviElement);
+//Drugi zadatak
+let el = document.querySelector('p');
+element.remove();
