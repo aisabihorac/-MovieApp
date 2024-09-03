@@ -79,3 +79,6 @@ element.remove();
 //ZAdatak 3
 let doc= document.querySelector('h1');
 element.innerText = "New Heading";
+//Zadatak 4
+let elem=document.querySelector('div');
+element.classList.add('new-class');
