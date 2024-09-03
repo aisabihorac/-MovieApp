@@ -98,3 +98,8 @@ element.setAttribute('src', 'image.jpg');
 //Zadatak 9
 let dugme=document.querySelector('button');
 element.addEventListener('click', function() { alert("Hello!"); });
+//Zadatak 10
+let divElement = document.querySelector('div');
+divElement.addEventListener('click', function() {
+  divElement.classList.toggle('active');
+});
