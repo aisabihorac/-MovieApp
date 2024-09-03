@@ -76,3 +76,6 @@ document.body.appendChild(noviElement);
 //Drugi zadatak
 let el = document.querySelector('p');
 element.remove();
+//ZAdatak 3
+let doc= document.querySelector('h1');
+element.innerText = "New Heading";
