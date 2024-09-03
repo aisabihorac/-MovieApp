@@ -82,3 +82,6 @@ element.innerText = "New Heading";
 //Zadatak 4
 let elem=document.querySelector('div');
 element.classList.add('new-class');
+//ZAdatak 5
+let docu=document.querySelector('div');
+element.classList.remove('old-class');
