@@ -68,3 +68,8 @@ for (let i=0; i<3; i++){
   //napiranje niza
   const nizNaslova = jsonMovies.map(movie => movie.id);
   console.log(nizNaslova);
+
+//Zadaca 11
+ let element =document.createElement('p');
+Element.innerText = "Hello, World!";
+document.body.appendChild(noviElement);
