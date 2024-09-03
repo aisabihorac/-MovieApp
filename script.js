@@ -92,4 +92,6 @@ element.style.backgroundColor = "blue";
 let novo=document.createElement('li');
 novo.innerText = "New Item";
 document.querySelector('ul').appendChild(novo);
-
+//Zadatak 8
+let slika=document.querySelector('img');
+element.setAttribute('src', 'image.jpg');
