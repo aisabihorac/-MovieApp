@@ -85,6 +85,11 @@ element.classList.add('new-class');
 //ZAdatak 5
 let docu=document.querySelector('div');
 element.classList.remove('old-class');
-//ZAdatak 7
+//ZAdatak 6
 let eleme=document.querySelector('div');
 element.style.backgroundColor = "blue";
+//Zadatak 7
+let novo=document.createElement('li');
+novo.innerText = "New Item";
+document.querySelector('ul').appendChild(novo);
+
