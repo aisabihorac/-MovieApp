@@ -95,3 +95,6 @@ document.querySelector('ul').appendChild(novo);
 //Zadatak 8
 let slika=document.querySelector('img');
 element.setAttribute('src', 'image.jpg');
+//Zadatak 9
+let dugme=document.querySelector('button');
+element.addEventListener('click', function() { alert("Hello!"); });
