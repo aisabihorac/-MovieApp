@@ -85,3 +85,6 @@ element.classList.add('new-class');
 //ZAdatak 5
 let docu=document.querySelector('div');
 element.classList.remove('old-class');
+//ZAdatak 7
+let eleme=document.querySelector('div');
+element.style.backgroundColor = "blue";
