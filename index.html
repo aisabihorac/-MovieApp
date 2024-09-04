@@ -1,117 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Movie Site</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <!--ovo svojstvo data-bs-theme je kreirao bootstrap da su koristi tamna ili svijetla tema na stranici-->
 
-  <body data-bs-theme="light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Movie Night Pro</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Movies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Snacks
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Popcorn</a>
-                <a class="dropdown-item" href="#">Tacos</a>
-                <a class="dropdown-item" href="#">Chips</a>
-                
-               
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Movie Site</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+<!--ovo svojstvo data-bs-theme je kreirao bootstrap da su koristi tamna ili svijetla tema na stranici-->
 
-    
-    <!------------------SEARCH-------------------->
-    <!--Ovdje treba biti input i search dugme. Kada se klikne ispod ce se prikazati poruka-->
-   <div class="container text-center">
+<body data-bs-theme="light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Movie Night Pro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Snacks
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Popcorn</a>
+            <a class="dropdown-item" href="#">Tacos</a>
+            <a class="dropdown-item" href="#">Chips</a>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!------------------SEARCH-------------------->
+  <!--Ovdje treba biti input i search dugme. Kada se klikne ispod ce se prikazati poruka-->
+  <div class="container text-center">
     <input type="text" id="input" placeholder="Unesite naziv filma">
-<button onclick="searchMovie()"class="btn btn-primary">Pretraga</button>
+    <button onclick="searchMovies()" class="btn btn-primary">Pretraga</button>
 
-<p id="result"></p>
-</div>
-    <!------------------CAROUSEL-------------------->
+    <p id="result"></p>
+  </div>
+  <!------------------CAROUSEL-------------------->
 
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/c1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/c2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/c3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/c1.jpg" class="d-block w-100" alt="...">
       </div>
-    
-    <!------------------TOP 3 MOVIES-------------------->
-    <!--Ovdje trebaju biti 3 kolone sa slikama filmova iz assets foldera-->
-    <div class="container mt-4">
-        <div class="row">
-          <!-- Prva kolona -->
-          <div class="col-md-4 p-2">
-            <img id="1" src="" class="img-fluid" alt="Slika 1">
-            <button class="btn btn-primary mt-2">Wish list</button>
-          </div>
-      
-          <!-- Druga kolona -->
-          <div class="col-md-4 p-2">
-            <img  id="2"src="" class="img-fluid" alt="Slika 2">
-            <button class="btn btn-primary mt-2">Wish list</button>
-          </div>
-      
-          <!-- Treća kolona -->
-          <div class="col-md-4 p-2">
-            <img id="3" src="" class="img-fluid" alt="Slika 3">
-            <button class="btn btn-primary mt-2">Wish list</button>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img src="assets/c2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/c3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!------------------TOP 3 MOVIES-------------------->
+  <!--Ovdje trebaju biti 3 kolone sa slikama filmova iz assets foldera-->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Prva kolona -->
+      <div class="col-md-4 p-2">
+        <img id="1" src="" class="img-fluid" alt="Slika 1">
+        <button class="btn btn-primary mt-2">Wish list</button>
       </div>
 
-    <script src="script.js" ></script>
-    <!--Bootstrap JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <!-- Druga kolona -->
+      <div class="col-md-4 p-2">
+        <img id="2" src="" class="img-fluid" alt="Slika 2">
+        <button class="btn btn-primary mt-2">Wish list</button>
+      </div>
+
+      <!-- Treća kolona -->
+      <div class="col-md-4 p-2">
+        <img id="3" src="" class="img-fluid" alt="Slika 3">
+        <button class="btn btn-primary mt-2">Wish list</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
