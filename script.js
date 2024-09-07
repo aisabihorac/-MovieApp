@@ -57,13 +57,22 @@ for (let i = 0; i < 3; i++) {
 
 }
 function searchMovies() {
+  let  ladingimage = document.getElementById('loading-gif');
+  ladingimage;
+  setTimeout(function (){
+
   let input = document.getElementById("input").value.toLowerCase();
+
+  if(ponovoload) {
+    ponovoload.remove();
+  }
   let foundMovie = jsonMovies.find((movie) => movie.title.toLowerCase() === input);
   if (foundMovie) {
     document.getElementById("result").innerText = "Pronađen je vaš film: " + foundMovie.title;
   } else {
     document.getElementById("result").innerText = "Film nije pronađen.";
   }
+}, 2000);
 }
 //napiranje niza
 const nizNaslova = jsonMovies.map(movie => movie.id);
