@@ -106,3 +106,9 @@ request.addEventListener('load', function () {
   const data = JSON.parse(this.responseText);
   console.log(data);
 })
+
+//String sa vise redova
+let linkSlike = "assets/1.jpg";
+let duziString = `<img src = "${linkSlike}">
+`;
+console.log(duziString)
