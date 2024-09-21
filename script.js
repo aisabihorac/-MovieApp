@@ -1,13 +1,6 @@
 'use strict';
 
-const apiKey = "a496788d6dd8726ab0a300f87b22a7eb";
-const options = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNDk2Nzg4ZDZkZDg3MjZhYjBhMzAwZjg3YjIyYTdlYiIsIm5iZiI6MTcyNjE2NDQ1MS42ODA0Miwic3ViIjoiNTllMjVhYzRjM2EzNjg3YzA1MDAyMjkyIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.RjFsI68AsS01VyRw1fmscyX727xt39FZvvzo5xooRag"
-  }
-};
+
 const popularURL = `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=${apiKey}`;
 const imageURL = "https://image.tmdb.org/t/p/original/"
 fetch(popularURL, options).then(response => response.json()).then(data => {
