@@ -62,3 +62,50 @@ function findMovie() {
   
   document.getElementById("search-div").removeChild(loadImg);
 }
+//Lekcija 18-vjezba OOP
+let counter={
+  name:"Test iz Hemije",
+  povecaj: function(){
+    console.log("Dani +1");
+  }
+}
+counter.povecaj();
+function Counter(name){
+  this.name=name;
+  let counter=0;
+  this.povecaj=function(){
+    console.log("Dani+1(konstruktor funk)")
+  }
+}
+let novaGodina = new Counter("Nova Godina 2025");
+let test=new Counter("Test iz matematike");
+console.log(novaGodina.name)
+novaGodina.povecaj();
+
+//Drugi zadatak
+function Sef(naziv){
+  this.naziv=naziv;
+  let _lozinka="sarajevo";
+
+}
+let sef707=new Sef("sef");
+console.log(sef707.naziv);
+class Animal{
+  constructor(name,color){
+    this.name=name
+    this.color=color
+  }
+  animalDetails(){
+    console.log("This: ",this.name);
+  }
+}
+let patka=new Animal("duck","brown");
+console.animalDetail();
+let galeb=new Animal("galeb","bijelo siva");
+class Osoba{
+  constuctor(ime,starost){
+    this.ime=ime;
+    this.starost=starost;
+  }
+}
+let osoba1=new Osoba("selma",29);
