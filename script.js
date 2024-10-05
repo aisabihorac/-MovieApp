@@ -109,3 +109,14 @@ class Osoba{
   }
 }
 let osoba1=new Osoba("selma",29);
+
+//Zadaca 18
+class User{
+constructor(id, ime, prezime, email, favMovies, password) {
+  this.id = id;             
+  this.ime = ime;  
+  this.prezime = prezime;              
+  this.email = email;      
+  this.favMovies = favMovies;   
+  this.password = password;   
+}}
