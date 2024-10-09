@@ -2,6 +2,7 @@
 
 
 
+
 const imageURL = "https://image.tmdb.org/t/p/original/";
 const topRatedURL = `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1&api_key=${apiKey}`
 fetch(topRatedURL, options).then(response => response.json()).then(data => {

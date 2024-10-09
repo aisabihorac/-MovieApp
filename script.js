@@ -1,4 +1,9 @@
+
 "use strict";
+
+
+
+
 
 const popularURL = `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=${apiKey}`;
 
