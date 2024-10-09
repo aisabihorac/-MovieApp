@@ -64,20 +64,13 @@
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" placeholder="Create a password">
           </div>
-          <button type="submit" class="btn btn-primary w-100">Sign up</button>
+          <button onclick="signUp(); return false; type="submit" class="btn btn-primary w-100">Sign up</button>
         </form>
         <p class="text-center mt-3">Already have an account? <a href="login.html">Log in here</a></p>
       </div>
     </div>
   </div>
-  <form onsubmit="signUp(); return false;">
-    <input type="text" id="firstName" placeholder="First Name" required>
-    <input type="text" id="lastName" placeholder="Last Name" required>
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button type="submit">Sign Up</button>
-</form>
-
+ 
 
 
 
