@@ -1,4 +1,7 @@
-'use strict';
+
+"use strict";
+
+
 
 
 
@@ -59,18 +62,38 @@ function findMovie() {
       }
     });
 
-  
   document.getElementById("search-div").removeChild(loadImg);
 }
 
 
-//Zadaca 18
-class User{
-constructor(id, ime, prezime, email, favMovies, password) {
-  this.id = id;             
-  this.ime = ime;  
-  this.prezime = prezime;              
-  this.email = email;      
-  this.favMovies = favMovies;   
-  this.password = password;   
-}}
+//Lekcija 19
+//Nasljeđivanje sa extend
+class Animal {
+  constructor(name, height, width) {
+    this.name = name;
+    this.height = height;
+    this.width = width;
+  }
+
+  writeDetails() {
+    console.log("Animal height is:", this.height);
+  }
+
+  speak() {
+    console.log("Animal make noises");
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log("Dog say awaw");
+  }
+}
+class Cat extends Animal {
+  speak() {
+    console.log("Cat says mjau");
+  }
+}
+
+let vucijak = new Dog("vucijak", 90, 60);
+vucijak.speak();
