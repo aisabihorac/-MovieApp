@@ -54,11 +54,12 @@ function signUp() {
     const oldUser = users.find(user => user.email === email);
     debugger;
     if (oldUser !== undefined) {
-        console.log("User already exists");
+        document.getElementById("message").innerHTML = "User already exists";
     } else {
         const newUser = new User(users.length + 1, firstName, lastName, email, [], password);
 
         users.push(newUser);
-        console.log("New user added:", newUser);
+        document.getElementById("message").innerHTML = "Account created";
+
     }
 }
