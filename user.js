@@ -10,8 +10,6 @@ class User {
         this.password = password;
 
     }
-
-
 }
 
 let users = [
@@ -40,6 +38,7 @@ function login() {
     if (userFound && correctPassword) {
         document.getElementById("message").innerText = "Successful log in";
         console.log("Successful log in");
+        document.getElementById("form").style.visibility = "hidden";
     } else {
         document.getElementById("message").innerText = "Incorrect email or password";
         console.log("Incorrect email or password");
