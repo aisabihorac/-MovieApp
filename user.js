@@ -40,6 +40,7 @@ function login() {
     if (userFound && correctPassword) {
         document.getElementById("message").innerText = "Successful log in";
         console.log("Successful log in");
+        let form=document.getElementById("form")
     } else {
         document.getElementById("message").innerText = "Incorrect email or password";
         console.log("Incorrect email or password");
@@ -53,9 +54,10 @@ function signUp() {
     const password = document.getElementById("password").value;
 
     const oldUser = users.find(user => user.email === email);
-    debugger;
+
     if (oldUser !== undefined) {
         console.log("User already exists");
+        document.getElementById("massage")
     } else {
         const newUser = new User(users.length + 1, firstName, lastName, email, [], password);
 
