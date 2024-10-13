@@ -1,7 +1,14 @@
 
 "use strict";
 
-
+const apiKey = "9cdde993d411dfddd56de7c3765e3e32";
+const options = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5Y2RkZTk5M2Q0MTFkZmRkZDU2ZGU3YzM3NjVlM2UzMiIsIm5iZiI6MTcyNjk5NzcwNC4wOTY5NTIsInN1YiI6IjU5ZTI1YWM0YzNhMzY4N2MwNTAwMjI5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.sv27-s-KY4DwrCSotF7h1d3FKf5tRn98YodfDGsFQpA"
+  }
+};
 
 
 
