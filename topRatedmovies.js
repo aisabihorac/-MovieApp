@@ -4,7 +4,6 @@
 
 let page=0;
 
-let page = 0;
 
 const imageURL = "https://image.tmdb.org/t/p/original/";
 let topRatedURL = `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=${page}1&api_key=${apiKey}`
