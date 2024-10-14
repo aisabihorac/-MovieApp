@@ -1,9 +1,5 @@
 "use strict";
-
-
-
 const popularURL = `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=${apiKey}`;
-
 const imageURL = "https://image.tmdb.org/t/p/original/";
 fetch(popularURL, options)
   .then((response) => response.json())
