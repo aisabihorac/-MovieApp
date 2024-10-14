@@ -39,10 +39,14 @@ function login() {
 
     if (userFound && correctPassword) {
         document.getElementById("message").innerText = "Successful log in";
+        document.getElementById("message").style.color = "green";
+        document.getElementById("message").style.fontWeight = "bold";
         console.log("Successful log in");
         let form=document.getElementById("form")
     } else {
         document.getElementById("message").innerText = "Incorrect email or password";
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").style.fontWeight = "bold";
         console.log("Incorrect email or password");
     }
 }
@@ -57,11 +61,16 @@ function signUp() {
 
     if (oldUser !== undefined) {
         console.log("User already exists");
-        document.getElementById("massage")
+        document.getElementById("message").innerText = "User already exists"; 
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").style.fontWeight = "bold";
     } else {
         const newUser = new User(users.length + 1, firstName, lastName, email, [], password);
 
         users.push(newUser);
         console.log("New user added:", newUser);
+        document.getElementById("message").innerText = "Successful sign up"; 
+        document.getElementById("message").style.color = "green";
+        document.getElementById("message").style.fontWeight = "bold";
     }
 }
